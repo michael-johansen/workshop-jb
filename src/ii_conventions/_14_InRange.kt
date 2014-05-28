@@ -27,6 +27,7 @@ fun todoTask14() = TODO(
     """
         Task 14.
         Uncomment the commented line.
+
         Right now interval membership is checked with the function 'fun <T> Iterable<T>.contains(T): Boolean'
         which is not optimal (you can check the boundaries instead of iterating over the whole range).
         Make class DateRange implement kotlin.Range<MyDate>.
@@ -36,6 +37,6 @@ fun todoTask14() = TODO(
 )
 
 fun checkInRange(date: MyDate, first: MyDate, last: MyDate): Boolean {
-    todoTask14()
-//    return date in first..last
+//    todoTask14()
+    return date in first..last
 }
