@@ -8,5 +8,5 @@ fun example5() {
 
 fun Shop.getCustomersSortedByNumberOfOrders(): List<Customer> {
     // Return a list of customers, sorted by the ascending number of orders they made
-    return customers.sortBy { it.orders.size }
+    return customers.sortedBy { it.orders.size() }
 }
