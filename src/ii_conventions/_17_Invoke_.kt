@@ -31,7 +31,7 @@ fun testTypeWithInvokeExtension() {
 }
 
 class Invokable(private var invocations: Int = 0) {
-    fun invoke(): Invokable {
+    operator fun invoke(): Invokable {
         invocations++
         return this
     }
