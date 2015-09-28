@@ -1,4 +1,10 @@
+.idea
+.gradle
 out
+build
+target
 workspace.xml
 keys
 results.txt
+**.iml
+
