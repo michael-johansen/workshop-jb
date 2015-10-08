@@ -12,5 +12,9 @@ fun todoTask2_2() = TODO(
     references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
 
 fun task2_2(collection: Collection<Int>): String {
-    return collection.joinToString(prefix = "{",separator = ", ", postfix = "}")
+    return collection.joinToString(
+            prefix = "{",
+            separator = ", ",
+            postfix = "}"
+    )
 }

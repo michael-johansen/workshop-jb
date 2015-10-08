@@ -18,9 +18,9 @@ fun todoTask2_1() = TODO(
         Uncomment the commented code and make it compile.
     """,
         references = { name: String -> JavaCode2().foo(name); foo(name) })
-
+               // toUpperCase ? name.toUpperCase() : name
 fun foo(name: String, number: Int = 42, toUpperCase: Boolean = false): String {
-   return (if(toUpperCase) name.toUpperCase() else name) + number;
+  return (if (toUpperCase) name.toUpperCase() else name) + number
 }
 
 fun task2_1(): String {
